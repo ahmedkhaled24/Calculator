@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundZero">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvZeroStart"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/backgroundZero"
+        android:fontFamily="sans-serif-light"
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="80dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/idAC"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="AC"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/idTopEight"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="+/-"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/idTopNine"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:text="%"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/idDivide"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="#f98810"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buEvent"
+                    android:text="/"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/id7"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="7"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id8"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="8"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id9"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="9"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/idX"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="#f98810"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buEvent"
+                    android:text="x"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/id4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="4"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id5"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="5"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id6"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="6"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/idMainas"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="#f98810"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buEvent"
+                    android:text="-"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/id1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="1"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="2"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/id3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="3"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/idPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="#f98810"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buEvent"
+                    android:text="+"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/id0"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="2"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left|center"
+                    android:onClick="buNumberShow"
+                    android:paddingStart="30sp"
+                    android:text="0"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/idDot"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#c3c4c6"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="buNumberShow"
+                    android:text="."
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/idEqual"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="#f98810"
+                    android:fontFamily="sans-serif-light"
+                    android:text="="
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:onClick="buEqual"/>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
